@@ -15,7 +15,7 @@ class Command(BaseCommand):
             client = Client(name=f'Name{i}',
                             email=f'mail{i}@mail.ru',
                             phone=f'{randint(111, 999)} - {randint(1111, 9999)}',
-                            address=f'Moscow, Mokhovaya str., {randint(1, 99)}, {randint(1, 150)}',
+                            address=f'Podolsk, Kosmonavtov str., {randint(1, 99)}, {randint(1, 150)}',
                             registration_date=f'{randint(1900, 2023)}-{randint(1, 12)}-{randint(1, 28)}')
             client.save()
             self.stdout.write(f'Client created: {client}.')

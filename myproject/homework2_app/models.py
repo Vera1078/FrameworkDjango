@@ -1,5 +1,6 @@
 from django.db import models
 from django.db.models import Manager
+from django.urls import reverse
 
 
 class Client(models.Model):
